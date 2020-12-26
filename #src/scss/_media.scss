@@ -1,0 +1,268 @@
+@media (max-width: 1440px) {
+  .first__page {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .first__page-wrapepr {
+    max-width: 980px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .quotes .quotes__slider {
+    margin: 0 auto;
+  }
+
+  .quotes .quotes__slider:before {
+    left: -80px;
+  }
+
+  .realize .realize__cloud-img1 {
+    display: none;
+  }
+}
+
+@media (max-width: 1020px) {
+  .rooms__slider .rooms__slider-title {
+    margin-left: 150px;
+  }
+
+  .about .about__cost,
+  .about .about__escort,
+  .about .about__guaranted {
+    margin-left: 20px;
+  }
+
+  .about .about__consultation {
+    margin-left: 130px;
+  }
+
+  .about .about__guaranted {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 920px) {
+  .header__link {
+    display: none;
+  }
+
+  .header {
+    .mobile__menu-btn {
+      display: flex;
+    }
+  }
+
+  .mobile__menu {
+    display: flex;
+  }
+
+  .about .about__column {
+    width: 420px;
+    margin: 0 auto;
+
+    &:first-child {
+      display: none;
+    }
+  }
+
+  .about .about__title {
+    margin: 0 auto 30px auto;
+  }
+
+  .about .about__consultation {
+    margin-left: 102px;
+  }
+
+  .quotes .quotes__slider {
+    padding-left: 100px;
+  }
+
+  .quotes .quotes__slider:before {
+    left: 15px;
+  }
+}
+
+@media (max-width: 720px) {
+  .first__page .first__page-title {
+    font-size: 60px;
+    max-width: 350px;
+    margin-bottom: 30px;
+    line-height: 80px;
+  }
+
+  .first__page {
+    margin-top: 10px;
+    margin-bottom: 80px;
+    padding-left: 100px;
+  }
+
+  .first__page-wrapepr img {
+    display: none;
+  }
+
+  .rooms__slider .rooms__slider-title {
+    margin-left: 100px;
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+
+  .realize .realize__column-img {
+    display: none;
+  }
+
+  .realize .realize__column {
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 670px) {
+  .quotes .slide__np {
+    padding-bottom: 10px;
+  }
+
+  .realize .realize__column {
+    padding-left: 0px;
+    align-items: center;
+  }
+
+  .partners .partners__title {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 510px) {
+  .header__signUp,
+  .header__signIn {
+    display: none;
+  }
+
+  .mobile__menu {
+    .mobile__menu-btns {
+      display: flex;
+    }
+  }
+
+  .first__page {
+    padding-left: 20px;
+  }
+
+  .first__page .first__page-text {
+    max-width: 290px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+
+  .header .mobile__menu-btn {
+    margin-right: 10px;
+  }
+
+  .rooms__slider .rooms__slider-title {
+    margin-left: 20px;
+    margin-bottom: 40px;
+  }
+
+  .about .about__cost,
+  .about .about__escort,
+  .about .about__guaranted {
+    margin-left: 0px;
+    padding-left: 65px;
+  }
+
+  .about .about__consultation {
+    display: block;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .about .about__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .about .about__title {
+    margin: 0 auto 10px auto;
+  }
+
+  .quotes .quotes__slider {
+    padding-left: 0px;
+    padding-top: 20px;
+  }
+
+  .quotes .quotes__slider:before {
+    left: 0px;
+    top: 20px;
+  }
+
+  .quotes .qoutes-container {
+    padding-top: 60px;
+  }
+
+  .quotes .swiper-button-next,
+  .quotes .swiper-button-prev {
+    top: 5%;
+  }
+
+  .quotes .slide__text {
+    margin-bottom: 20px;
+  }
+
+  .quotes .quotes__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .realize .realize_title {
+    font-size: 40px;
+    line-height: 50px;
+    max-width: 290px;
+    margin-bottom: 35px;
+  }
+
+  .quotes {
+    padding-bottom: 70px;
+  }
+
+  .rooms__slider {
+    margin-bottom: 60px;
+  }
+
+  .partners .partners__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .partners {
+    margin-bottom: 60px;
+  }
+
+  .footer .footer__wrapper {
+    display: block;
+    text-align: center;
+  }
+
+  .footer .footer__links {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    margin-bottom: 30px;
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 420px) {
+  .first__page {
+    padding-left: 0px;
+  }
+
+  .rooms__slider .rooms__slider-title {
+    margin-left: 0px;
+  }
+}

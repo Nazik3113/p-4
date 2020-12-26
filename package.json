@@ -1,0 +1,46 @@
+{
+  "name": "fsl-gulp",
+  "version": "1.0.0",
+  "description": "gulp production",
+  "main": "index.html",
+  "scripts": {
+    "webpack": "webpack watch --config webpack.config.js",
+    "babel": "babel #src/js/index.js -d dist/js",
+    "lint": "eslint ./"
+  },
+  "keywords": [
+    "Nazariy",
+    "Spikhalskiy"
+  ],
+  "author": "Nazariy Spikhalskiy",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "del": "^5.1.0",
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.21.2",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "file-system": "^2.2.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-fonter": "^0.3.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-ttf2woff": "^1.1.1",
+    "gulp-ttf2woff2": "^3.0.0",
+    "gulp-webp": "^4.0.1",
+    "gulp-webp-css": "^1.1.0",
+    "gulp-webp-html": "^1.0.2",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "gsap": "^3.5.1",
+    "swiper": "^6.3.5"
+  }
+}
