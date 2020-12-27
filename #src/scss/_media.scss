@@ -52,6 +52,12 @@
   }
 
   .header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    z-index: 100;
     .mobile__menu-btn {
       display: flex;
     }
@@ -85,6 +91,16 @@
   .quotes .quotes__slider:before {
     left: 15px;
   }
+
+  .first__page {
+    margin-top: 95px;
+  }
+}
+
+@media (max-width: 860px) {
+  .modal {
+    width: 90vw;
+  }
 }
 
 @media (max-width: 720px) {
@@ -96,7 +112,6 @@
   }
 
   .first__page {
-    margin-top: 10px;
     margin-bottom: 80px;
     padding-left: 100px;
   }
@@ -254,6 +269,20 @@
   .footer {
     margin-bottom: 30px;
     padding-top: 30px;
+  }
+
+  .modal .modal__text {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .modal {
+    padding: 0;
+  }
+
+  .modal .modal__close-btn {
+    right: 20px;
+    top: 20px;
   }
 }
 

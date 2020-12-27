@@ -55,6 +55,119 @@ li {
   padding: 0 15px;
 }
 
+.modalbg {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 160;
+  background-color: rgba(253, 102, 94, 0.2);
+  display: none;
+}
+
+.modalbg--active {
+  display: block;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+  z-index: 200;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+          box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  padding: 20px;
+  width: 800px;
+  display: none;
+}
+
+.modal--active {
+  display: block;
+}
+
+.modal .modal__circle {
+  width: 100px;
+  height: 100px;
+  background-color: #fd665e;
+  border-radius: 50%;
+  top: 20px;
+  left: 20px;
+  position: relative;
+}
+
+.modal .modal__close-btn {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 40px;
+  top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.modal .modal__close-btn:hover {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.modal .modal__close-line {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+
+.modal .modal__close-line:first-child {
+  -webkit-transform: translateY(18px) rotate(-45deg);
+      -ms-transform: translateY(18px) rotate(-45deg);
+          transform: translateY(18px) rotate(-45deg);
+}
+
+.modal .modal__close-line:last-child {
+  -webkit-transform: translateY(-19px) rotate(45deg);
+      -ms-transform: translateY(-19px) rotate(45deg);
+          transform: translateY(-19px) rotate(45deg);
+}
+
+.modal .modal__title {
+  font-weight: 200;
+  position: absolute;
+  font-size: 30px;
+  color: #000;
+  top: 60px;
+  left: 80px;
+}
+
+.modal .modal__text {
+  max-width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 50px;
+  font-size: 35px;
+  line-height: 35px;
+  color: #000;
+}
+
 .consultation__btn {
   font-weight: 600;
   font-size: 14px;
@@ -79,10 +192,6 @@ li {
   line-height: 26px;
   letter-spacing: 0.01em;
   color: #000000;
-}
-
-.overflowY {
-  overflow-y: hidden;
 }
 
 .header {
@@ -176,7 +285,7 @@ li {
 }
 
 .mobile__menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: #fff;
@@ -202,6 +311,7 @@ li {
   -webkit-box-shadow: 0px 0px 15px 1px #585858;
           box-shadow: 0px 0px 15px 1px #585858;
   display: none;
+  z-index: 110;
 }
 
 .mobile__menu.mobile__menu--active {
@@ -743,6 +853,14 @@ li {
   .header__link {
     display: none;
   }
+  .header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    z-index: 100;
+  }
   .header .mobile__menu-btn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -772,6 +890,15 @@ li {
   .quotes .quotes__slider:before {
     left: 15px;
   }
+  .first__page {
+    margin-top: 95px;
+  }
+}
+
+@media (max-width: 860px) {
+  .modal {
+    width: 90vw;
+  }
 }
 
 @media (max-width: 720px) {
@@ -782,7 +909,6 @@ li {
     line-height: 80px;
   }
   .first__page {
-    margin-top: 10px;
     margin-bottom: 80px;
     padding-left: 100px;
   }
@@ -917,6 +1043,17 @@ li {
     margin-bottom: 30px;
     padding-top: 30px;
   }
+  .modal .modal__text {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .modal {
+    padding: 0;
+  }
+  .modal .modal__close-btn {
+    right: 20px;
+    top: 20px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -968,6 +1105,14 @@ li {
 }
 
  @media (max-width: 920px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 860px){
 
 @supports (-webkit-appearance:none){
 

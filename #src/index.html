@@ -10,15 +10,28 @@
 
 <body>
 
+  <div class="modalbg"></div>
+  <div class="modal">
+    <div class="modal__circle"></div>
+    <button class="modal__close-btn">
+      <div class="modal__close-line"></div>
+      <div class="modal__close-line"></div>
+    </button>
+    <h4 class="modal__title">SORRY</h4>
+    <p class="modal__text">
+      I make great sites and sometimes repair kettles, but I don't manage this interior design studio.
+    </p>
+  </div>
+
   <header class="header">
     <div class="header__links">
       <a href="#" class="header__logo">
         <img src="./images/logo.png" alt="">
       </a>
-      <a href="#" class="header__link">Design Gallery</a>
-      <a href="#" class="header__link">List of Architect</a>
-      <a href="#" class="header__link">Articles</a>
-      <a href="#" class="header__link">How it Works</a>
+      <a href="gallery" class="header__link">Design Gallery</a>
+      <a href="archmove" class="header__link">List of Architect</a>
+      <a href="articles" class="header__link">Articles</a>
+      <a href="consultation" class="header__link">How it Works</a>
     </div>
     <div class="header__tech">
       <button class="header__search">
@@ -40,9 +53,10 @@
 
   <section class="mobile__menu">
     <div class="mobile__menu-links">
-      <a href="#" class="header__link-mobile">Design Gallery</a>
-      <a href="#" class="header__link-mobile">List of Architect</a>        <a href="#" class="header__link-mobile">Articles</a>
-      <a href="#" class="header__link-mobile">How it Works</a>
+      <a href="gallery" class="header__link-mobile">Design Gallery</a>
+      <a href="archmove" class="header__link-mobile">List of Architect</a>
+      <a href="articles" class="header__link-mobile">Articles</a>        
+      <a href="consultation" class="header__link-mobile">How it Works</a>
     </div>
     <div class="mobile__menu-btns">
       <a href="#" class="header__signIn-mobile">
@@ -78,7 +92,7 @@
     </div>
   </section>
 
-  <section class="rooms__slider">
+  <section class="rooms__slider" id="gallery">
     <div class="container">
       <div class="swiper-container">
         <h1 class="rooms__slider-title main__title">
@@ -112,7 +126,7 @@
     </div>  
   </section>
 
-  <section class="about">
+  <section class="about" id="archmove">
     <div class="container">
       <h1 class="about__title main__title">
         Build your needs with Archmove
@@ -154,7 +168,7 @@
     </div>
   </section>
 
-  <section class="quotes">
+  <section class="quotes" id="articles">
     <div class="container">
       <h1 class="quotes__title main__title">
         Sound Too Good To Be True?
@@ -196,7 +210,7 @@
     </div>
   </section>
 
-  <section class="realize">
+  <section class="realize" id="consultation">
     <div class="container">
       <div class="realize__wrapper">
         <div class="realize__column-img">
